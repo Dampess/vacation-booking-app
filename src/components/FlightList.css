@@ -1,0 +1,36 @@
+.flight-list {
+  margin: 20px 0;
+}
+
+.flight-list h2 {
+  margin-top: 5% ;
+
+  margin-bottom: 4% ;
+}
+
+.flight-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.flight-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(
+    33.333% - 20px
+  ); /* Ajuste la largeur pour trois cartes par ligne */
+  box-sizing: border-box;
+}
+
+.flight-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.flight-card p {
+  margin: 10px 0 0;
+}

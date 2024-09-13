@@ -1,0 +1,25 @@
+.filters {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.filters:first-child{
+  justify-self: flex-start;
+}
+
+.filters input {
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}

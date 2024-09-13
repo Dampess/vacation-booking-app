@@ -1,0 +1,25 @@
+.home-page {
+  padding: 20px;
+}
+
+.home-page h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.hotel-list {
+  margin-bottom: 40px;
+}
+
+.hotel-list h2 {
+  margin-bottom: 1%;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}

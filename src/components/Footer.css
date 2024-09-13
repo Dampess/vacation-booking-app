@@ -1,0 +1,20 @@
+/* Footer.css */
+.main-footer {
+  background-color: #4a91e281;
+  color: #3e3d3d;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.main-footer a {
+  color: #007bff;
+}
+
+.main-footer a:hover {
+  color: #0056b3;
+}

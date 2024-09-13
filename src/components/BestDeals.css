@@ -1,0 +1,23 @@
+.best-deals {
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.best-deals h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.hotel-grid-B {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hotel-grid-B {
+    display: flex;
+    flex-direction: column;
+  }
+}

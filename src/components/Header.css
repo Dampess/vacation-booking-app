@@ -1,0 +1,51 @@
+/* Header.css */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #4a91e220;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 90px; /* Ajustez la taille selon vos besoins */
+  height: auto;
+  margin-right: 15px; /* Espace entre le logo et le texte */
+  border-radius: 15px;
+}
+
+.header-content {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  margin-left: 20px;
+  color: #1f4d83;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #1f4d83;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}

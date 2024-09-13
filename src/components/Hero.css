@@ -1,0 +1,37 @@
+.hero {
+  position: relative;
+  height: 70vh; /* Hauteur de la section Hero */
+  background-image: url('./assets/woman-6339701_1280.jpg'); /* Chemin vers votre image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Effet parallaxe */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.252); /* Couleur de la superposition avec opacité */
+  z-index: 1; /* S'assure que la superposition est au-dessus de l'image */
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem; 
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}

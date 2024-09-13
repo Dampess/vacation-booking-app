@@ -1,0 +1,65 @@
+.payment-page {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.payment-page h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.payment-page button {
+  background-color: #6c757d; /* Couleur de fond désactivée */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+  font-size: 1.2rem;
+  opacity: 0.6; /* Rendre le bouton visuellement désactivé */
+}
+
+.payment-page p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Formulaire désactivé */
+.payment-form input[disabled] {
+  background-color: #f1f1f1; /* Arrière-plan gris pour indiquer que le champ est désactivé */
+  color: #a0a0a0; /* Texte plus clair */
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.payment-form input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.payment-form .form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-form .form-group {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
