@@ -197,7 +197,11 @@ const ReservationPage = () => {
     <div className="reservation-page">
       {hotel ? (
         <>
-          <img src={hotel.imageUrl} alt={hotel.name} className="hotel-image" />
+          <img
+            src={`${process.env.PUBLIC_URL}${hotel.imageUrl}`}
+            alt={hotel.name}
+            className="hotel-image"
+          />
           <h2>Réservez votre séjour à {hotel.name}</h2>
           <p>{hotel.location}</p>
           <p>Prix par nuit : {hotel.price}€</p>
