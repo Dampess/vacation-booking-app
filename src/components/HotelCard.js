@@ -5,7 +5,7 @@ import "./HotelCard.css";
 const HotelCard = ({ hotel }) => {
   return (
     <div className="hotel-card">
-      <img src={hotel.imageUrl} alt={hotel.name} className="hotel-image" />
+      <img src={`${process.env.PUBLIC_URL}${hotel.imageUrl}`} alt={hotel.name} className="hotel-image" />
       <div className="hotel-details">
         <h3 style={{ fontWeight: "bold" }}>{hotel.name}</h3>
         <p style={{ fontWeight: "600" }}>{hotel.location}</p>
