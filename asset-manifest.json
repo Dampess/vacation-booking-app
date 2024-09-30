@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/vacation-booking-app/static/css/main.ccc4b564.css",
-    "main.js": "/vacation-booking-app/static/js/main.3b84ac0d.js",
+    "main.js": "/vacation-booking-app/static/js/main.3e9d13da.js",
     "static/js/453.28f69800.chunk.js": "/vacation-booking-app/static/js/453.28f69800.chunk.js",
     "static/media/woman-6339701_1280.jpg": "/vacation-booking-app/static/media/woman-6339701_1280.f0ec7e4f13bacd6557f9.jpg",
     "static/media/stayEaseLogo.png": "/vacation-booking-app/static/media/stayEaseLogo.6f49a9988cf7f6ae15f0.png",
     "index.html": "/vacation-booking-app/index.html",
     "main.ccc4b564.css.map": "/vacation-booking-app/static/css/main.ccc4b564.css.map",
-    "main.3b84ac0d.js.map": "/vacation-booking-app/static/js/main.3b84ac0d.js.map",
+    "main.3e9d13da.js.map": "/vacation-booking-app/static/js/main.3e9d13da.js.map",
     "453.28f69800.chunk.js.map": "/vacation-booking-app/static/js/453.28f69800.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ccc4b564.css",
-    "static/js/main.3b84ac0d.js"
+    "static/js/main.3e9d13da.js"
   ]
 }
