@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Routes>
+        <Routes basename="/vacation-booking-app">
           <Route path="/" element={<HomePage />} />
           <Route path="/reservation/:hotelId" element={<ReservationPage />} />
           <Route path="/payment" element={<PaymentPage />} />
