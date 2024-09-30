@@ -1,36 +1,67 @@
 .flight-list {
   margin: 20px 0;
+  text-align: center; /* Centrer le titre et les cartes de vol */
 }
 
 .flight-list h2 {
-  margin-top: 5% ;
-
-  margin-bottom: 4% ;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  color: #1f4d83; /* Couleur du texte pour un contraste plus prononcé */
+  font-family: 'Lucida Sans', sans-serif; /* Police accueillante */
 }
 
 .flight-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center; /* Centrer les cartes dans la grille */
 }
 
 .flight-card {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 15px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: calc(
-    33.333% - 20px
-  ); /* Ajuste la largeur pour trois cartes par ligne */
+  background-color: #ffffff; /* Couleur de fond blanche pour une apparence propre */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre plus douce pour un effet d'élévation */
+  width: calc(33.333% - 20px); /* Ajuste la largeur pour trois cartes par ligne */
   box-sizing: border-box;
+  transition: transform 0.3s; /* Effet de transition lors du survol */
+}
+
+.flight-card:hover {
+  transform: translateY(-5px); /* Légère élévation de la carte au survol */
 }
 
 .flight-card h3 {
   margin: 0;
   font-size: 1.2em;
+  color: #1f4d83; /* Couleur du texte pour un contraste plus prononcé */
 }
 
 .flight-card p {
   margin: 10px 0 0;
+  color: #555; /* Couleur de texte plus douce pour les descriptions */
+}
+
+/* Si vous souhaitez ajouter un bouton ou une action sur la carte de vol */
+.flight-button-container {
+  display: flex;
+  justify-content: center; /* Centre le bouton horizontalement */
+  margin-top: 15px; /* Espacement entre les détails du vol et le bouton */
+}
+
+.flight-button {
+  background-color: #7dd321dc; /* Couleur de fond vive pour le bouton */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold; /* Texte en gras pour plus d'impact */
+  transition: background-color 0.3s, transform 0.3s; /* Effet de transition pour le bouton */
+}
+
+.flight-button:hover {
+  background-color: #7dd3215d; /* Légère variation de couleur au survol */
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
 }

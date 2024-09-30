@@ -11,7 +11,7 @@ const Filters = ({
 }) => {
   return (
     <div className="filters">
-      <h3>Une idée sur votre prochaine destination ?</h3>
+      <h3>Prochaine destination ?</h3>
       <input
         type="text"
         placeholder="Rechercher un hôtel..."

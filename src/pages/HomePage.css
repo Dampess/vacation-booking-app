@@ -1,25 +1,238 @@
 .home-page {
-  padding: 20px;
+  padding: 10px; /* Augmenter le padding pour un look plus spacieux */
+  background-color: #f0f8ff; /* Un bleu très clair et apaisant */
+  color: #333; /* Texte en gris doux */
+  font-family: "Arial", sans-serif; /* Police plus moderne */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre légèrement plus marquée pour ajouter de la profondeur */
+  transition: background-color 0.3s ease; /* Transition pour le changement de couleur */
 }
 
-.home-page h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
-  margin-top: 15%;
-  margin-bottom: 15%;
-}
-
-.hotel-list {
-  margin-bottom: 40px;
-}
-
+/* Styles pour les titres principaux */
 .hotel-list h2 {
-  margin-bottom: 1%;
+  font-size: 2.8rem; /* Augmentation de la taille pour plus de visibilité */
+  color: #00796b; /* Vert émeraude doux */
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px; /* Augmenter l'espacement des lettres pour une touche moderne */
+  text-transform: capitalize; /* Majuscules pour les premiers caractères */
 }
 
+/* Mise en page de la grille des hôtels */
 .hotel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Affichage par défaut : 3 cartes par ligne */
+  gap: 30px; /* Espacement par défaut entre les cartes */
+}
+
+/* Style des cartes d'hôtel */
+.hotel-card {
+  background-color: #ffffff;
+  border-radius: 15px; /* Arrondir davantage les bords */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus douce */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout de transition pour l'ombre */
+}
+
+/* Effet de survol pour les cartes */
+.hotel-card:hover {
+  transform: translateY(-5px); /* Élever légèrement au survol */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+}
+
+/* Image de la carte d'hôtel */
+.hotel-card img {
+  border-radius: 15px 15px 0 0; /* Correspondre aux bords arrondis de la carte */
+}
+
+/* Titre de la carte d'hôtel */
+.hotel-card h3 {
+  color: #00796b; /* Harmonie avec le titre général */
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold; /* Mettre en gras pour souligner le nom de l'hôtel */
+}
+
+/* Description de la carte d'hôtel */
+.hotel-card p {
+  color: #555; /* Couleur du texte de description */
+  padding: 0 15px; /* Augmenter le padding pour un meilleur espacement */
+}
+
+/* Prix dans la carte d'hôtel */
+.hotel-card .price {
+  color: #ff7043; /* Orange doux et joyeux */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Styles de pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; /* Augmenter l'espacement */
+}
+
+/* Boutons de pagination */
+.pagination button {
+  margin: 0 10px;
+  padding: 12px 25px; /* Augmenter le padding pour un look plus généreux */
+  background-color: #ffb74d; /* Orange doux */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Arrondir les bords */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Ajout de la transformation */
+}
+
+/* Effet de survol sur les boutons de pagination */
+.pagination button:hover {
+  background-color: #ff9800; /* Accentuation légère au survol */
+  transform: scale(1.05); /* Légère élévation au survol */
+}
+
+/* Bouton désactivé */
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Section de la carte */
+.map-section {
+  margin-top: 50px; /* Augmenter l'espacement */
+  text-align: center;
+}
+
+/* Titre de la section de la carte */
+.map-section h2 {
+  margin-bottom: 20px; /* Augmenter l'espacement */
+  color: #0288d1; /* Bleu rappelant la mer et le ciel */
+  font-weight: bold; /* Mettre en gras pour un meilleur impact */
+}
+
+/* Style de la carte */
+.custom-map {
+  width: 85%; /* Réduit la largeur de la carte à 85% du conteneur parent */
+  height: 350px; /* Ajuste la hauteur de la carte */
+  margin: 0 auto; /* Centre la carte */
+  border-radius: 12px; /* Arrondir les bords */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour plus de style */
+}
+
+/* Section hero */
+.hero {
+  padding: 120px 20px; /* Plus d'espace pour un effet d'envergure */
+  color: #fff;
+  text-align: center;
+  font-size: 3rem; /* Augmenter la taille du texte */
+  letter-spacing: 2px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la section hero */
+.hero h1 {
+  margin-bottom: 30px; /* Augmenter l'espacement */
+  font-family: "Playfair Display", serif; /* Typographie élégante */
+}
+
+/* Styles des filtres */
+.filters {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px; /* Augmenter le padding pour un look plus spacieux */
+  background-color: #e3f2fd; /* Bleu pastel apaisant */
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Champs des filtres */
+.filters input,
+.filters select {
+  padding: 12px; /* Augmenter le padding */
+  border-radius: 8px; /* Arrondir davantage les bords */
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 300px; /* Largeur maximale pour les champs */
+  font-size: 1rem;
+}
+
+/* Boutons des filtres */
+.filters button {
+  padding: 12px 25px; /* Augmenter le padding pour un look plus généreux */
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Arrondir les bords */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet de survol sur les boutons des filtres */
+.filters button:hover {
+  background-color: #004d40; /* Accentuation du bouton au survol */
+}
+
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+  .hotel-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne pour les écrans plus petits */
+    gap: 20px; /* Espacement réduit */
+  }
+
+  /* Autres styles ajustés comme avant */
+  .hotel-card {
+    transition: transform 0.3s ease; /* Transition pour l'effet d'élévation */
+  }
+
+  .hotel-card:hover {
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+  }
+
+  /* Réduire le padding et la taille de la police des titres */
+  .hero {
+    padding: 80px 20px; /* Réduire le padding pour un meilleur ajustement */
+    font-size: 2.5rem; /* Ajuster la taille du texte */
+  }
+
+  /* Ajoutez d'autres styles que vous avez déjà pour les filtres, pagination, etc. */
+}
+
+@media (max-width: 480px) {
+  .hotel-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    gap: 15px; /* Espacement encore réduit */
+  }
+
+  .hotel-card {
+    display: flex; /* Utilisation de Flexbox pour le contenu */
+    flex-direction: column; /* Organiser le contenu verticalement */
+    padding: 10px; /* Padding interne pour l'espacement */
+    border: 1px solid #ddd; /* Ajouter une bordure pour un look plus défini */
+  }
+
+  .hotel-card img {
+    width: 100%; /* Faire en sorte que l'image prenne toute la largeur */
+    height: auto; /* Conserver le ratio de l'image */
+    border-radius: 10px; /* Arrondir les coins de l'image */
+  }
+
+  .hotel-card h3 {
+    font-size: 1.5rem; /* Ajuster la taille du titre */
+    margin: 10px 0; /* Espacement autour du titre */
+  }
+
+  .hotel-card p {
+    font-size: 0.9rem; /* Ajuster la taille de la description */
+    margin-bottom: 10px; /* Espacement inférieur pour la description */
+  }
+
+  .hotel-card .price {
+    font-size: 1.2rem; /* Ajuster la taille du prix */
+  }
+
+  .pagination button {
+    padding: 10px 20px; /* Ajuster le padding pour les petits écrans */
+  }
 }

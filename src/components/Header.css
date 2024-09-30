@@ -3,8 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  background-color: #4a91e220;
+  padding: 20px 40px; /* Augmenter le padding pour plus d'espace autour du contenu */
+  background: linear-gradient(
+    135deg,
+    #4a91e2,
+    #007bff
+  ); /* Dégradé pour plus de dynamisme */
+  border-bottom: 3px solid #007bff; /* Ajoute une bordure en bas pour séparer visuellement */
+  border-radius: 0 0 10px 10px; /* Arrondit les coins du header */
+  position: relative; /* Positionnement relatif pour le menu */
 }
 
 .logo-container {
@@ -13,39 +20,93 @@
 }
 
 .logo {
-  width: 90px; /* Ajustez la taille selon vos besoins */
+  width: 80px; /* Ajustement de la taille du logo */
   height: auto;
-  margin-right: 15px; /* Espace entre le logo et le texte */
-  border-radius: 15px;
+  margin-right: 20px; /* Augmenter l'espace entre le logo et le texte */
+  border-radius: 10px;
 }
 
-.header-content {
-  flex-grow: 1;
-  text-align: center;
+.menu-icon {
+  font-size: 30px; /* Taille de l'icône du menu */
+  cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+  color: #ffffff; /* Couleur de l'icône */
+  transition: transform 0.3s; /* Animation lors du survol */
 }
 
-.main-header h1 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 2rem;
-  margin-left: 20px;
-  color: #1f4d83;
+.menu-icon:hover {
+  transform: rotate(90deg); /* Rotation lors du survol pour effet visuel */
 }
 
-nav {
-  margin-right: 20px;
+.nav-links {
+  display: none; /* Masquer le menu par défaut */
+  flex-direction: column; /* Alignement en colonne */
+  position: absolute; /* Positionnement absolu */
+  top: 100%; /* Juste en dessous de l'en-tête */
+  left: 0; /* Aligné à gauche */
+  right: 0; /* Aligné à droite */
+  background: rgba(74, 145, 226, 0.9); /* Fond semi-transparent */
+  padding: 10px 0; /* Padding pour le menu */
+  z-index: 1000; /* S'assurer que le menu est au-dessus d'autres éléments */
+  border-radius: 0 0 10px 10px; /* Arrondir les coins inférieurs */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Ombre pour donner de la profondeur */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Animation douce */
+  opacity: 0; /* Masquer le menu au départ */
+  transform: translateY(-10px); /* Déplacer légèrement vers le haut */
 }
 
-nav a {
-  color: #1f4d83;
+.nav-links.open {
+  display: flex; /* Affiche le menu lorsque l'état est ouvert */
+  opacity: 1; /* Affiche le menu */
+  transform: translateY(0); /* Réinitialiser la position lors de l'ouverture */
+}
+
+.nav-link {
+  color: #ffffff; /* Couleur blanche pour les liens */
   text-decoration: none;
   font-weight: bold;
-  margin-left: 20px;
+  padding: 10px 20px; /* Padding pour les liens */
+  transition: color 0.3s, background-color 0.3s; /* Transition douce pour le survol */
+  position: relative; /* Positionnement relatif pour l'effet de soulignement */
+}
+
+.nav-link:hover {
+  color: #ffdd57; /* Couleur au survol pour les liens */
+  background-color: rgba(255, 255, 255, 0.2); /* Fond clair au survol */
+  border-radius: 5px; /* Coins arrondis pour un effet de bouton */
+}
+
+.nav-link:after {
+  content: ""; /* Ajouter un pseudo-élément */
+  position: absolute; /* Position absolue pour un effet sous-jacent */
+  left: 0;
+  bottom: 0; /* Positionner en bas du lien */
+  width: 100%; /* Pleine largeur */
+  height: 2px; /* Hauteur de la ligne */
+  background-color: #ffdd57; /* Couleur de la ligne */
+  transform: scaleX(0); /* Commencer caché */
+  transition: transform 0.3s ease; /* Transition douce */
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1); /* Élargir la ligne au survol */
 }
 
 
+/* Media Queries pour la responsivité */
 @media (max-width: 768px) {
   .main-header {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row; /* Disposition verticale sur petits écrans */
+    padding: 15px 20px; /* Réduire le padding sur les petits écrans */
+  }
+
+  .menu-icon {
+    font-size: 30px; /* Taille de l'icône du menu */
+    cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+    color: #ffffff; /* Couleur de l'icône */
+    transition: transform 0.3s; /* Animation lors du survol */
+  }
+
+  .menu-icon.open {
+    transform: rotate(90deg); /* Rotation lorsque le menu est ouvert */
   }
 }

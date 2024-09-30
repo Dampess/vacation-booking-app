@@ -1,33 +1,44 @@
+/* payment-page.css */
 .payment-page {
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Fond blanc pour un look épuré */
+  padding: 40px 30px; /* Espacement intérieur avec plus de marge horizontale */
+  border-radius: 12px; /* Bords arrondis pour un look contemporain */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Ombre plus marquée pour profondeur */
   width: 100%;
-  max-width: 500px;
-  margin: 40px auto;
+  max-width: 500px; /* Largeur maximale */
+  margin: 50px auto; /* Espacement vertical centré */
   text-align: left;
+  font-family: 'Arial', sans-serif; /* Police moderne */
 }
 
 .payment-page h2 {
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 25px; /* Espacement entre le titre et le contenu */
+  text-align: center; /* Centrer le titre */
+  color: #00796b; /* Couleur d'accentuation moderne */
+  font-size: 2rem; /* Taille de texte augmentée */
+  letter-spacing: 1px; /* Espacement entre les lettres pour un style aéré */
 }
 
 .payment-page button {
-  background-color: #6c757d; /* Couleur de fond désactivée */
+  background-color: #007bff; /* Couleur de fond du bouton */
   color: white;
   padding: 15px 30px;
   border: none;
-  border-radius: 5px;
-  cursor: not-allowed;
-  font-size: 1.2rem;
-  opacity: 0.6; /* Rendre le bouton visuellement désactivé */
+  border-radius: 8px; /* Bords arrondis */
+  cursor: pointer; /* Curseur de main */
+  font-size: 1.2rem; /* Taille de texte ajustée */
+  transition: background-color 0.3s, transform 0.2s; /* Transitions douces */
+}
+
+.payment-page button:hover {
+  background-color: #0056b3; /* Couleur plus sombre au survol */
+  transform: translateY(-2px); /* Légère élévation au survol */
 }
 
 .payment-page p {
   font-size: 1rem;
   margin-bottom: 20px;
+  color: #555; /* Couleur de texte douce */
 }
 
 /* Formulaire désactivé */
@@ -40,26 +51,33 @@
 }
 
 .payment-form input {
-  padding: 10px;
+  padding: 12px; /* Espacement interne pour confort */
   margin: 10px 0;
-  width: 100%;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  width: 100%; /* Largeur maximale pour les champs */
+  font-size: 1rem; /* Taille de texte standard */
+  border-radius: 8px; /* Bords arrondis */
+  border: 1px solid #ccc; /* Bordure douce */
+  transition: border 0.3s, box-shadow 0.3s; /* Effets de transition pour le focus */
+}
+
+.payment-form input:focus {
+  border-color: #007bff; /* Bordure accentuée au focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Ombre autour du champ */
+  outline: none; /* Supprimer le contour par défaut */
 }
 
 .payment-form .form-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Espacement entre les champs */
 }
 
 .payment-form .form-group {
-  width: 100%;
-  margin: 10px 0;
+  width: 100%; /* Prendre toute la largeur */
+  margin: 10px 0; /* Espacement vertical */
 }
 
 .error-message {
-  color: red;
-  font-size: 0.9rem;
-  margin-top: 10px;
+  color: red; /* Couleur rouge pour les messages d'erreur */
+  font-size: 0.9rem; /* Taille de texte légèrement plus petite */
+  margin-top: 10px; /* Espacement supérieur */
 }

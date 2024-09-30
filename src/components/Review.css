@@ -1,0 +1,34 @@
+.review {
+  background-color: #ffffff; /* Fond blanc pour un meilleur contraste */
+  border: 1px solid #7dd321; /* Bordure colorée pour un aspect vivant */
+  border-radius: 10px; /* Bordures arrondies pour un look plus doux */
+  padding: 15px; /* Augmentation de l'espacement interne pour plus de confort */
+  margin-top: 15px; /* Espacement entre les commentaires */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour profondeur */
+  transition: transform 0.3s; /* Transition pour les effets */
+}
+
+.review:hover {
+  transform: translateY(-3px); /* Légère élévation au survol */
+}
+
+.review h4 {
+  margin: 0;
+  font-size: 20px; /* Taille de police légèrement augmentée */
+  color: #1f4d83; /* Couleur du texte du titre pour un meilleur contraste */
+}
+
+.review p {
+  margin: 5px 0;
+  color: #555; /* Couleur de texte un peu plus foncée pour la lisibilité */
+  line-height: 1.5; /* Amélioration de l'espacement entre les lignes */
+}
+
+.review-section {
+  margin-top: 20px;
+  max-height: 300px; /* Limite la hauteur pour les longues sections de commentaires */
+  overflow-y: auto; /* Permet le défilement si le contenu dépasse la hauteur */
+  border-radius: 10px; /* Arrondir les bords de la section */
+  padding: 10px; /* Espacement interne pour la section des avis */
+  background-color: #f1f1f1; /* Couleur de fond légèrement différente pour la section */
+}

@@ -1,9 +1,10 @@
 /* Footer.css */
 .main-footer {
-  background-color: #4a91e281;
-  color: #3e3d3d;
+  background-color: #ffdd57; /* Couleur de fond joyeuse */
+  color: #3e3d3d; /* Couleur du texte */
   text-align: center;
   padding: 20px 0;
+  border-top: 2px solid #1f4d83; /* Une bordure supérieure pour séparer le footer du contenu */
 }
 
 .main-footer p {
@@ -12,9 +13,28 @@
 }
 
 .main-footer a {
-  color: #007bff;
+  color: #1f4d83; /* Couleur des liens */
+  text-decoration: none; /* Supprime le soulignement */
+  font-weight: bold; /* Rendre les liens plus visibles */
 }
 
 .main-footer a:hover {
-  color: #0056b3;
+  color: #0056b3; /* Couleur des liens au survol */
+  text-decoration: underline; /* Souligner les liens au survol pour indiquer l'interaction */
+}
+
+/* Styles pour les icônes de médias sociaux */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px; /* Espacement entre les icônes */
+  font-size: 1.5rem; /* Taille des icônes */
+  color: #1f4d83; /* Couleur des icônes */
+  transition: color 0.3s; /* Transition douce pour le changement de couleur */
+}
+
+.social-icons a:hover {
+  color: #0056b3; /* Couleur au survol des icônes */
 }

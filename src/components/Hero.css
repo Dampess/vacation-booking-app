@@ -1,3 +1,4 @@
+/* Hero.css */
 .hero {
   position: relative;
   height: 70vh; /* Hauteur de la section Hero */
@@ -10,7 +11,7 @@
   justify-content: center;
   color: white;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px; /* Augmente l'arrondi des coins */
   margin-bottom: 4%;
 }
 
@@ -21,17 +22,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.252); /* Couleur de la superposition avec opacité */
+  background: rgba(0, 0, 0, 0.3); /* Augmente l'opacité pour un meilleur contraste */
   z-index: 1; /* S'assure que la superposition est au-dessus de l'image */
 }
 
 .hero-content {
   text-align: center;
+  z-index: 2; /* Assure que le contenu est au-dessus de la superposition */
 }
 
 .hero h1 {
-  font-size: 3rem; 
+  font-size: 3.5rem; /* Augmente la taille du titre */
   font-weight: bold;
   margin: 0;
-  color: #ffffff;
+  color: #ffdd57; /* Change la couleur pour une teinte plus joyeuse */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre pour rendre le texte plus lisible */
+  animation: fadeIn 1s ease-in-out; /* Ajoute une animation de fondu */
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Commence invisible */
+    transform: translateY(-20px); /* Se déplace légèrement vers le haut */
+  }
+  to {
+    opacity: 1; /* Devient visible */
+    transform: translateY(0); /* Retourne à la position originale */
+  }
+}
+

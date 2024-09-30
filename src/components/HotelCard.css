@@ -5,17 +5,25 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 15px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Couleur de fond blanche pour une apparence propre */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre plus douce pour un effet d'élévation */
   margin-right: 2%;
+  transition: transform 0.3s; /* Effet de transition lors du survol */
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px); /* Légère élévation de la carte au survol */
 }
 
 .hotel-card h3 {
   margin-bottom: 10px;
+  color: #1f4d83; /* Couleur du texte pour un contraste plus prononcé */
+  font-family: 'Lucida Sans', sans-serif; /* Police plus accueillante */
 }
 
 .hotel-card p {
   margin-bottom: 10px;
+  color: #555; /* Couleur de texte plus douce pour les descriptions */
 }
 
 .hotel-image {
@@ -23,6 +31,7 @@
   height: 200px;
   border-radius: 8px;
   object-fit: cover;
+  border: 2px solid #7dd321dc; /* Bordure colorée pour un look joyeux */
 }
 
 .hotel-details {
@@ -36,14 +45,49 @@
 }
 
 .book-button {
-  background-color: #7dd321dc;
+  background-color: #7dd321dc; /* Couleur de fond vive pour le bouton */
   color: white;
   padding: 15px 30px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: bold; /* Texte en gras pour plus d'impact */
+  transition: background-color 0.3s, transform 0.3s; /* Effet de transition pour le bouton */
 }
 
 .book-button:hover {
-  background-color: #7dd3215d;
+  background-color: #7dd3215d; /* Légère variation de couleur au survol */
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+/* Section des avis */
+.review-section {
+  height: 200px; /* Augmenter la hauteur pour plus d'espace */
+  overflow-y: scroll;
+  padding: 15px; /* Augmenter le padding pour un meilleur espacement */
+}
+
+/* Styles pour la scrollbar */
+.review-section::-webkit-scrollbar {
+  width: 10px; /* Largeur de la scrollbar */
+}
+
+.review-section::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Couleur de fond du track */
+  border-radius: 10px; /* Bords arrondis du track */
+}
+
+.review-section::-webkit-scrollbar-thumb {
+  background: #007bff; /* Couleur du thumb */
+  border-radius: 10px; /* Bords arrondis du thumb */
+}
+
+.review-section::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Couleur du thumb au survol */
+}
+
+/* Pour Firefox */
+.review-section {
+  scrollbar-width: thin; /* Taille de la scrollbar */
+  scrollbar-color: #007bff #f1f1f1; /* Couleurs du thumb et du track */
 }

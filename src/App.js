@@ -12,8 +12,8 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Routes basename="/vacation-booking-app">
-          <Route path="/" element={<HomePage />} />
+        <Routes>
+          <Route path="/vacation-booking-app" element={<HomePage />} />
           <Route path="/reservation/:hotelId" element={<ReservationPage />} />
           <Route path="/payment" element={<PaymentPage />} />
         </Routes>
